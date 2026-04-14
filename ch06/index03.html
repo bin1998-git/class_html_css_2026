@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>오늘의 뉴스</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: bisque;
+      }
+
+      header {
+        background-color: orange;
+        color: white;
+        text-align: center;
+        justify-content: center;
+      }
+
+      nav a {
+        text-decoration: none;
+        font-size: 17px;
+        margin: 0 15px;
+        color: black;
+        cursor: pointer;
+      }
+
+      main {
+        display: flex;
+        padding: 20px;
+        min-height: 400px;
+      }
+
+      section {
+        flex: 3;
+        padding: 20px;
+      }
+
+      aside {
+        flex: 1;
+        background-color: #fff;
+        border-radius: 8px;
+      }
+
+      footer {
+        background-color: aliceblue;
+        text-align: center;
+        padding: 15px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>오늘의 뉴스</h1>
+      <p>매일 새로운 소식을 전합니다</p>
+    </header>
+
+    <!-- 네브바 -->
+    <nav>
+      <ul>
+        <li><a href="#">홈</a></li>
+        <li><a href="#">정치</a></li>
+        <li><a href="#">경제</a></li>
+      </ul>
+    </nav>
+
+    <!-- main -->
+    <main>
+      <!-- 기사 목록 영역 -->
+      <section>
+        <h2>오늘의 중요 뉴스</h2>
+        <!-- 독립적인 기사 하나 -->
+        <article>
+          <h3>HTML5 시멘틱 태그 중요성</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            quisquam cum inventore blanditiis praesentium debitis animi
+            reiciendis. Numquam a perspiciatis, quam inventore, repudiandae
+            temporibus tenetur, atque similique voluptates iste molestias.
+          </p>
+        </article>
+
+        <article>
+          <h3>카페 개장</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+            quisquam cum inventore blanditiis praesentium debitis animi
+            reiciendis. Numquam a perspiciatis, quam inventore, repudiandae
+            temporibus tenetur, atque similique voluptates iste molestias.
+          </p>
+        </article>
+      </section>
+
+      <aside>
+        <h3>인기 검색어</h3>
+        <ol>
+          <li>HTML 시멘틱 태그</li>
+          <li>css 레이아웃</li>
+          <li>프론트 앤드 로드맵</li>
+          <li>js 기초 문법</li>
+        </ol>
+      </aside>
+    </main>
+
+    <!-- 페이지 하단 영역 -->
+    <footer>
+      <p>&copy; 2026 오늘의 뉴스..</p>
+    </footer>
+  </body>
+</html>
