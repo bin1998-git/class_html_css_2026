@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        height: 700px;
+        display: flex;
+        border: 2px solid green;
+        /* 단축해서 지정 가능 */
+
+        flex-wrap: nowrap;
+        padding: 5px;
+        flex-direction: column;
+        flex-flow: row wrap;
+
+        /*  자식요소 정렬해보기 */
+        /* 전체 주측방향? --> ROW */
+        justify-content: space-evenly;
+        /* 교차축 방향 정렬 */
+        align-items: end;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: aquamarine;
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid black;
+        border-radius: 8px;
+        color: white;
+        line-height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+    </div>
+  </body>
+</html>
