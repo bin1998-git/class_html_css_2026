@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-wrapper {
+  flex: 1;
+}
+
+.header {
+  background-color: #edf2fe;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.btn-header {
+  background-color: #5045e6;
+  justify-content: center;
+  padding: 20px 40px;
+  border-radius: 8px;
+  color: white;
+}
+
+.logo-back {
+  margin-top: 20px;
+  background-color: #1e293c;
+  display: flex;
+  justify-content: space-between; /* 로고 왼쪽, 메뉴 오른쪽 */
+  align-items: center;
+  padding: 0 20px;
+  /* ★ padding 대신 height 고정 → 정중앙 정렬 보장
+       padding으로 높이를 만들면 align-items: center의 기준이 흔들림
+       height를 명시해야 중앙 계산이 정확함 */
+  height: 60px;
+  color: white;
+}
+
+.menu {
+  color: rgb(214, 206, 206);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  flex: 1 1 250px;
+}
+
+.layout {
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+}
+
+.main {
+  flex: 1;
+}
+
+.hero {
+  height: 100vh;
+  background: url("https://picsum.photos/seed/movie1/200/300") center/cover;
+  /* center → 이미지를 가운데 정렬
+       cover  → 영역을 꽉 채우도록 이미지 확대/축소 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-section {
+  color: white;
+}
