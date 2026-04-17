@@ -2,77 +2,131 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
+}
+
+body {
   font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .content-wrapper {
   flex: 1;
 }
 
-.header {
-  background-color: #edf2fe;
-  padding: 50px 20px;
-  text-align: center;
+/* 1. 가운데 정렬 */
+.demo-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #eef2ff;
+  margin-bottom: 20px;
 }
 
-.btn-header {
-  background-color: #5045e6;
-  justify-content: center;
+.box {
+  background-color: aquamarine;
+  color: white;
   padding: 20px 40px;
   border-radius: 8px;
-  color: white;
 }
 
-.logo-back {
-  margin-top: 20px;
-  background-color: #1e293c;
+/* 2. 네비게이션바 */
+.demo-nav {
   display: flex;
-  justify-content: space-between; /* 로고 왼쪽, 메뉴 오른쪽 */
+  justify-content: space-between;
   align-items: center;
-  padding: 0 20px;
-  /* ★ padding 대신 height 고정 → 정중앙 정렬 보장
-       padding으로 높이를 만들면 align-items: center의 기준이 흔들림
-       height를 명시해야 중앙 계산이 정확함 */
+  background-color: blueviolet;
   height: 60px;
+  padding: 0 20px;
+  margin-bottom: 20px;
   color: white;
 }
 
-.menu {
-  color: rgb(214, 206, 206);
+.demo-nav a {
+  text-decoration: none;
+  color: rgb(135, 128, 128);
+  margin-left: 20px;
 }
 
-.cards {
+/* 3. 카드그리드 */
+.demo-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  background-color: #f4f4f4;
+  margin-bottom: 20px;
+  padding: 30px;
 }
 
 .card {
-  flex: 1 1 250px;
+  flex: 1 1 200px;
+  padding: 30px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.layout {
+.demo-sidebar-layout {
   display: flex;
+  min-height: 200px;
+  margin-bottom: 20px;
 }
 
 .sidebar {
-  width: 250px;
+  width: 200px;
+  background-color: rgb(12, 12, 90);
+  color: white;
+  padding: 20px;
 }
 
 .main {
   flex: 1;
+  background-color: #ab9d9d;
+  padding: 20px;
+  color: white;
 }
 
-.hero {
-  height: 100vh;
-  background: url("https://picsum.photos/seed/movie1/200/300") center/cover;
-  /* center → 이미지를 가운데 정렬
-       cover  → 영역을 꽉 채우도록 이미지 확대/축소 */
+/* 4. 히어로 섹션 */
+.demo-hero {
+  height: 300px;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  font-size: 20px;
+  background: url("http://picsum.photos/seed/hero/1200/300");
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+  margin-bottom: 20px;
 }
 
-.hero-section {
-  color: white;
+.demo-responsive {
+  display: flex;
+
+  padding: 20px;
+  gap: 20px;
+}
+.col {
+  flex: 1;
+  border-radius: 8px;
+  text-align: center;
+  background-color: lightblue;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.demo-footer {
+  padding: 20px;
+  background-color: rgb(14, 14, 132);
+  color: aqua;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .demo-responsive {
+    flex-direction: column;
+  }
 }
